@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+  <title>Compost Quiz</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" type="text/css" href="float-grid.css">
+</head>
+  
+<body>
+
+ <header role="banner">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="title">Compost Quiz</h1>
+      </div>
+    </div>
+  </header>
+
+ <main role="main">
+    <div class="row">
+      <div class="col-12">
+          <p class="score" id="score"></p>
+          <div id="questionsList" class="questions"></div>
+          <label class="option"><input type="radio" name="option" value="1" /> <span id="opt1"></span></label>
+          <label class="option"><input type="radio" name="option" value="2" /> <span id="opt2"></span></label>
+          <label class="option"><input type="radio" name="option" value="3" /> <span id="opt3"></span></label>
+          <label class="option"><input type="radio" name="option" value="4" /> <span id="opt4"></span></label>
+          <button id="nextbtn" class="next" onclick="loadNext()">Next</button>  
+          <div class="answer" id="answer"></div>
+      </div>
+     </div> 
+    <div id="resultCont" class="result" style="display:none"></div>
+ </main>
+ 
+ <script src="app.js"></script>
+</body>
